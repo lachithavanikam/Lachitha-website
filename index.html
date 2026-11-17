@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lachitha Vanikam supplies premium B2B bulk almonds, saffron, cashews and green pistachio.">
+    <title>Lachitha Vanikam | Premium B2B Bulk Ingredients</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            brown: '#4A2E1B',
+                            orange: '#E07A5F',
+                            cream: '#F7F5F0',
+                            gold: '#F2CC8F'
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        :root {
+            color-scheme: light;
+            scroll-behavior: smooth;
+            --luxury-ink: #27170F;
+            --luxury-gold: #D5AE69;
+            --luxury-cream: #FAF7F1;
+        }
+
+        body {
+            background: var(--luxury-cream);
+        }
+
+        h1, h2, h3 {
+            font-family: Georgia, "Times New Roman", serif;
+            text-wrap: balance;
+        }
+
+        .luxury-heading {
+            letter-spacing: -0.035em;
+        }
+
+        .luxury-nav {
+            border-bottom: 1px solid rgba(213, 174, 105, 0.22);
+        }
+
+        .hero-glow {
+            animation: hero-glow 12s ease-in-out infinite alternate;
+        }
+
+        .hero-copy > * {
+            animation: hero-enter 700ms both;
+        }
+
+        .hero-copy > *:nth-child(1) { animation-delay: 80ms; }
+        .hero-copy > *:nth-child(2) { animation-delay: 180ms; }
+        .hero-copy > *:nth-child(3) { animation-delay: 280ms; }
+        .hero-copy > *:nth-child(4) { animation-delay: 380ms; }
+        .hero-copy > *:nth-child(5) { animation-delay: 480ms; }
+        .hero-panel {
+            animation: hero-enter 850ms 220ms both;
+        }
+
+        .reveal-ready .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 650ms ease, transform 650ms cubic-bezier(0.2, 0.7, 0.2, 1);
+        }
+
+        .reveal-ready .reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .product-card {
+            transition: transform 280ms ease, box-shadow 280ms ease, border-color 280ms ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(213, 174, 105, 0.7);
+            box-shadow: 0 22px 45px rgba(39, 23, 15, 0.1);
+        }
+
+        .premium-button {
+            transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+        }
+
+        .premium-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(39, 23, 15, 0.18);
+        }
+
+        @keyframes hero-enter {
+            from { opacity: 0; transform: translateY(18px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes hero-glow {
+            from { opacity: 0.65; transform: scale(1); }
+            to { opacity: 1; transform: scale(1.05); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            :root { scroll-behavior: auto; }
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                scroll-behavior: auto !important;
+                transition-duration: 0.01ms !important;
+            }
+            .reveal-ready .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-gray-800 font-sans antialiased">
+    <div class="bg-brand-brown px-4 py-3 text-xs text-brand-gold sm:text-sm">
+        <div class="mx-auto flex max-w-7xl items-center justify-center text-center">
+            <span class="font-semibold uppercase tracking-wide">FSSAI certified quality · domestic &amp; global supply</span>
+        </div>
+    </div>
+
+    <nav class="luxury-nav sticky top-0 z-50 bg-white/95 shadow-sm backdrop-blur-sm" aria-label="Main navigation">
+        <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+                <a href="#top" class="flex min-w-0 items-center gap-3" aria-label="Lachitha Vanikam home">
+                    <img src="./Logo.png" alt="Lachitha Vanikam logo" class="h-12 w-12 shrink-0 rounded object-contain ring-2 ring-brand-gold/40" width="48" height="48">
+                    <span>
+                        <span class="block text-xl font-bold tracking-tight text-brand-brown">Lachitha <span class="text-brand-orange">Vanikam</span></span>
+                        <span class="block text-[10px] font-semibold uppercase tracking-[0.2em] text-gray-500">Premium B2B wholesale</span>
+                    </span>
+                </a>
+                <div class="flex flex-wrap items-center gap-2">
+                    <a href="#feedback" class="rounded border border-brand-brown px-4 py-2.5 text-center text-sm font-semibold text-brand-brown transition hover:bg-brand-cream">Give feedback</a>
+                    <a href="#inquiry" class="rounded bg-brand-brown px-4 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-brand-orange">Request a wholesale quote</a>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 border-t border-gray-100 pt-3 text-sm font-medium text-gray-700">
+                <a href="#about" class="transition hover:text-brand-orange">About us</a>
+                <a href="#catalogue" class="transition hover:text-brand-orange">Products</a>
+                <a href="#moq" class="transition hover:text-brand-orange">Minimum orders</a>
+                <a href="#inquiry" class="transition hover:text-brand-orange">Send an inquiry</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="top" class="relative overflow-hidden bg-[#27170F] py-16 sm:py-24">
+        <div class="hero-glow absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(213,174,105,0.2),_transparent_38%),radial-gradient(circle_at_bottom_right,_rgba(138,74,45,0.32),_transparent_40%)]"></div>
+        <div class="absolute inset-0 opacity-[0.07] [background-image:linear-gradient(rgba(255,255,255,0.18)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.18)_1px,transparent_1px)] [background-size:72px_72px]"></div>
+        <div class="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 md:grid-cols-[1.1fr_0.9fr] lg:px-8">
+            <div class="hero-copy">
+                <span class="mb-5 inline-flex rounded-full border border-brand-orange/30 bg-brand-orange/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-gold">Wholesale ingredients for business</span>
+                <h1 class="luxury-heading max-w-xl text-5xl font-medium leading-[1.08] text-white sm:text-6xl">Exceptional ingredients.<br><span class="text-brand-gold">Uncompromising quality.</span></h1>
+                <p class="mt-6 max-w-xl text-lg leading-relaxed text-brand-cream/80">Source premium almonds, saffron, cashews and pistachios for your food, confectionery or cosmetics business—with clear minimums and attentive wholesale support.</p>
+                <div class="mt-8 flex flex-wrap gap-3">
+                    <a href="#inquiry" class="premium-button rounded bg-brand-gold px-6 py-3 text-sm font-semibold text-brand-brown shadow-lg shadow-black/20 hover:bg-white">Request a wholesale quote</a>
+                    <a href="#catalogue" class="premium-button rounded border border-brand-gold/70 px-6 py-3 text-sm font-semibold text-brand-gold transition hover:bg-brand-gold/10">Explore products</a>
+                </div>
+                <div class="mt-10 flex flex-wrap gap-6 border-t border-brand-gold/25 pt-6 text-sm text-brand-cream/75">
+                    <div><span class="block text-2xl font-semibold text-white">3–5 business days</span><span>Domestic delivery</span></div>
+                    <div><span class="block text-2xl font-semibold text-white">FSSAI</span><span>Certified quality</span></div>
+                    <div><span class="block text-2xl font-semibold text-white">B2B</span><span>Wholesale focus</span></div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="hero-panel rounded-3xl border border-brand-gold/35 bg-gradient-to-br from-white/10 to-white/[0.03] p-6 shadow-2xl shadow-black/25 backdrop-blur-sm sm:p-8">
+                    <div class="border-b border-brand-gold/20 pb-4">
+                        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-brand-gold">Global export capabilities</p>
+                        <p class="mt-2 text-2xl font-bold text-white">Domestic &amp; international procurement</p>
+                    </div>
+                    <div class="mt-6 space-y-4">
+                        <div class="flex items-center justify-between gap-3 rounded-xl bg-white/5 px-3 py-2 text-sm">
+                            <span class="text-brand-cream/75">Premium whole almonds</span>
+                            <span class="font-semibold text-white">MOQ: 120 kg</span>
+                        </div>
+                        <div class="flex items-center justify-between gap-3 rounded-xl bg-white/5 px-3 py-2 text-sm">
+                            <span class="text-brand-cream/75">Premium saffron stigma</span>
+                            <span class="font-semibold text-white">MOQ: 100 g</span>
+                        </div>
+                        <div class="flex items-center justify-between gap-3 rounded-xl bg-white/5 px-3 py-2 text-sm">
+                            <span class="text-brand-cream/75">Premium bulk cashews</span>
+                            <span class="font-semibold text-white">MOQ: 10 kg</span>
+                        </div>
+                        <div class="flex items-center justify-between gap-3 rounded-xl bg-white/5 px-3 py-2 text-sm">
+                            <span class="text-brand-cream/75">Green pistachio</span>
+                            <span class="font-semibold text-white">MOQ: 10 kg</span>
+                        </div>
+                        <div class="flex items-center justify-between gap-3 rounded-xl bg-white/5 px-3 py-2 text-sm">
+                            <span class="text-brand-cream/75">Delivery lead time</span>
+                            <span class="font-semibold text-white">3–5 business days</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex items-center gap-2 rounded-xl bg-emerald-500/15 px-3 py-2 text-sm font-medium text-emerald-300">
+                        <span>✓</span>
+                        <span>Full FSSAI compliance and quality assurance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="reveal bg-brand-cream px-4 py-14 sm:py-20">
+            <div class="mx-auto max-w-7xl">
+                <div class="mb-8 text-center">
+                    <p class="text-xs font-bold uppercase tracking-[0.2em] text-brand-orange">From harvest to your business</p>
+                    <h2 class="luxury-heading mt-2 text-3xl font-semibold text-brand-brown sm:text-4xl">Rooted in nature, selected with care</h2>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <figure class="group overflow-hidden rounded-3xl border border-brand-gold/30 bg-white shadow-lg shadow-brand-brown/5">
+                        <div class="aspect-[16/9] overflow-hidden">
+                            <img src="./images/almond-harvest.jpg" alt="Freshly harvested almonds spread beside a woven basket" width="1920" height="1280" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+                        </div>
+                        <figcaption class="p-5 sm:p-6">
+                            <h3 class="luxury-heading text-2xl font-semibold text-brand-brown">Almond harvest</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-gray-600">Whole almonds gathered at harvest and prepared for careful handling.</p>
+                            <p class="mt-3 text-xs text-gray-500">“<a class="underline decoration-brand-gold underline-offset-2 hover:text-brand-orange" href="https://commons.wikimedia.org/wiki/File:Autumn_harvest_of_almonds_(Israel).jpg" target="_blank" rel="noopener noreferrer">Autumn harvest of almonds (Israel)</a>” by Davidbena, Wikimedia Commons · <a class="underline decoration-brand-gold underline-offset-2 hover:text-brand-orange" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+                        </figcaption>
+                    </figure>
+                    <figure class="group overflow-hidden rounded-3xl border border-brand-gold/30 bg-white shadow-lg shadow-brand-brown/5">
+                        <div class="aspect-[16/9] overflow-hidden">
+                            <img src="./images/saffron-harvest.jpg" alt="Workers gathering saffron flowers across a purple field" width="1050" height="461" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+                        </div>
+                        <figcaption class="p-5 sm:p-6">
+                            <h3 class="luxury-heading text-2xl font-semibold text-brand-brown">Saffron harvest</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-gray-600">Saffron flowers are carefully gathered during the harvest season.</p>
+                            <p class="mt-3 text-xs text-gray-500">“<a class="underline decoration-brand-gold underline-offset-2 hover:text-brand-orange" href="https://commons.wikimedia.org/wiki/File:Harvesting_saffron_-_Iran_(12).jpg" target="_blank" rel="noopener noreferrer">Harvesting saffron – Iran (12)</a>” by Hossein Tohidi Fard / Fars Media Corporation, Wikimedia Commons · <a class="underline decoration-brand-gold underline-offset-2 hover:text-brand-orange" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <p class="mt-5 text-center text-xs text-gray-500">Harvest images are illustrative and do not necessarily depict our suppliers or sourcing locations.</p>
+            </div>
+        </section>
+
+        <section id="about" class="reveal mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+            <div class="mx-auto max-w-3xl text-center">
+                <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-brand-orange">Built for B2B buyers</h2>
+                <p class="mt-3 text-3xl font-extrabold text-brand-brown">Reliable bulk ingredient supply for growing businesses</p>
+                <p class="mt-4 text-base text-gray-600 sm:text-lg">We support food, confectionery and cosmetic manufacturers with transparent pricing, dependable supply schedules and a straightforward ordering process built around business needs.</p>
+            </div>
+
+            <div class="mt-10 grid gap-5 md:grid-cols-3">
+                <div class="rounded-2xl border border-brand-gold/30 bg-white p-6 shadow-sm">
+                    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-orange">01</p>
+                    <h3 class="mt-3 text-xl font-bold text-brand-brown">Quality first</h3>
+                    <p class="mt-2 text-sm text-gray-600">Every order is handled with attention to product quality, packaging integrity and consistent customer expectations.</p>
+                </div>
+                <div class="rounded-2xl border border-brand-gold/30 bg-white p-6 shadow-sm">
+                    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-orange">02</p>
+                    <h3 class="mt-3 text-xl font-bold text-brand-brown">Flexible volumes</h3>
+                    <p class="mt-2 text-sm text-gray-600">Clear MOQ thresholds help buyers plan procurement for retail, wholesale and industrial production.</p>
+                </div>
+                <div class="rounded-2xl border border-brand-gold/30 bg-white p-6 shadow-sm">
+                    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-orange">03</p>
+                    <h3 class="mt-3 text-xl font-bold text-brand-brown">Responsive support</h3>
+                    <p class="mt-2 text-sm text-gray-600">Our team responds quickly with availability, specification and pricing details tailored to your requirement.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="catalogue" class="reveal border-y border-brand-gold/20 bg-white py-16 sm:py-20">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mb-10 text-center sm:text-left">
+                    <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-brand-orange">Product catalogue</h2>
+                    <p class="mt-2 text-3xl font-extrabold text-brand-brown">B2B bulk ingredients</p>
+                </div>
+                <div class="grid gap-6 sm:grid-cols-2">
+                    <article class="product-card flex h-full flex-col justify-between rounded-2xl border border-brand-gold/30 bg-gradient-to-br from-white to-brand-cream/80 p-6 shadow-sm sm:p-8">
+                        <div>
+                            <div class="flex flex-wrap items-start justify-between gap-3">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-brand-brown">Premium whole almonds</h3>
+                                    <p class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-orange">Grade A industrial bulk</p>
+                                </div>
+                                <span class="rounded bg-brand-brown px-3 py-1 text-xs font-bold text-white">MOQ: 120 kg</span>
+                            </div>
+                            <p class="mt-4 text-sm text-gray-600">Uniform almond kernels for confectionery, nut butter, marzipan and food manufacturing.</p>
+                            <dl class="mt-6 space-y-2 text-sm">
+                                <div class="flex flex-wrap justify-between gap-2 border-t border-gray-200 pt-2"><dt class="text-gray-500">Moisture</dt><dd class="font-semibold">&lt; 5.5% maximum</dd></div>
+                                <div class="flex flex-wrap justify-between gap-2 border-t border-gray-200 pt-2"><dt class="text-gray-500">Purity</dt><dd class="font-semibold">99.8% minimum</dd></div>
+                                <div class="flex flex-wrap justify-between gap-2 border-t border-gray-200 pt-2"><dt class="text-gray-500">Packaging</dt><dd class="text-right font-semibold">Vacuum-sealed box / drums</dd></div>
+                            </dl>
+                        </div>
+                        <button type="button" data-product="almonds" class="mt-6 w-full rounded bg-brand-brown px-4 py-3 text-sm font-semibold text-white transition hover:bg-brand-orange">Inquire about almonds</button>
+                    </article>
+
+                    <article class="product-card flex h-full flex-col justify-between rounded-2xl border border-brand-gold/30 bg-gradient-to-br from-white to-brand-cream/80 p-6 shadow-sm sm:p-8">
+                        <div>
+                            <div class="flex flex-wrap items-start justify-between gap-3">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-brand-brown">Premium saffron stigma</h3>
+                                    <p class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-orange">Super Negin export quality</p>
+                                </div>
+                                <span class="rounded bg-brand-orange px-3 py-1 text-xs font-bold text-white">MOQ: 100 g</span>
+                            </div>
+                            <p class="mt-4 text-sm text-gray-600">Premium saffron threads for gourmet foods, confectionery, cosmetics and other commercial applications.</p>
+                            <dl class="mt-6 space-y-2 text-sm">
+                                <div class="flex flex-wrap justify-between gap-2 border-t border-gray-200 pt-2"><dt class="text-gray-500">Colour intensity</dt><dd class="font-semibold">Category I (&gt; 230)</dd></div>
+                                <div class="flex flex-wrap justify-between gap-2 border-t border-gray-200 pt-2"><dt class="text-gray-500">Additives</dt><dd class="font-semibold">No synthetic additives</dd></div>
+                                <div class="flex flex-wrap justify-between gap-2 border-t border-gray-200 pt-2"><dt class="text-gray-500">Packaging</dt><dd class="text-right font-semibold">Light-proof sealed packs</dd></div>
+                            </dl>
+                        </div>
+                        <button type="button" data-product="saffron" class="mt-6 w-full rounded bg-brand-orange px-4 py-3 text-sm font-semibold text-white transition hover:bg-brand-brown">Inquire about saffron</button>
+                    </article>
+
+                    <article class="product-card flex h-full flex-col justify-between rounded-2xl border border-brand-gold/30 bg-gradient-to-br from-white to-brand-cream/80 p-6 shadow-sm sm:p-8">
+                        <div>
+                            <div class="flex flex-wrap items-start justify-between gap-3">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-brand-brown">Premium bulk cashews</h3>
+                                    <p class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-orange">Wholesale supply</p>
+                                </div>
+                                <span class="rounded bg-brand-brown px-3 py-1 text-xs font-bold text-white">MOQ: 10 kg</span>
+                            </div>
+                            <p class="mt-4 text-sm text-gray-600">Bulk cashews for food service, confectionery and commercial food production. Contact us to confirm available grades and packaging.</p>
+                            <dl class="mt-6 space-y-2 text-sm">
+                                <div class="flex flex-wrap justify-between gap-2 border-t border-gray-200 pt-2"><dt class="text-gray-500">Moisture</dt><dd class="font-semibold">&lt; 5.5% maximum</dd></div>
+                                <div class="flex flex-wrap justify-between gap-2 border-t border-gray-200 pt-2"><dt class="text-gray-500">Purity</dt><dd class="font-semibold">99.8% minimum</dd></div>
+                                <div class="flex flex-wrap justify-between gap-2 border-t border-gray-200 pt-2"><dt class="text-gray-500">Packaging</dt><dd class="text-right font-semibold">Vacuum-sealed box / drums</dd></div>
+                            </dl>
+                        </div>
+                        <button type="button" data-product="cashews" class="mt-6 w-full rounded bg-brand-brown px-4 py-3 text-sm font-semibold text-white transition hover:bg-brand-orange">Inquire about cashews</button>
+                    </article>
+
+                    <article class="product-card flex h-full flex-col justify-between rounded-2xl border border-brand-gold/30 bg-gradient-to-br from-white to-brand-cream/80 p-6 shadow-sm sm:p-8">
+                        <div>
+                            <div class="flex flex-wrap items-start justify-between gap-3">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-brand-brown">Green pistachio</h3>
+                                    <p class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-orange">Wholesale supply</p>
+                                </div>
+                                <span class="rounded bg-brand-orange px-3 py-1 text-xs font-bold text-white">MOQ: 10 kg</span>
+                            </div>
+                            <p class="mt-4 text-sm text-gray-600">Green pistachios for confectionery, food service and commercial production. Contact us to confirm available grades and packaging.</p>
+                            <dl class="mt-6 space-y-2 text-sm">
+                                <div class="flex flex-wrap justify-between gap-2 border-t border-gray-200 pt-2"><dt class="text-gray-500">Moisture</dt><dd class="font-semibold">&lt; 5.5% maximum</dd></div>
+                                <div class="flex flex-wrap justify-between gap-2 border-t border-gray-200 pt-2"><dt class="text-gray-500">Purity</dt><dd class="font-semibold">99.8% minimum</dd></div>
+                                <div class="flex flex-wrap justify-between gap-2 border-t border-gray-200 pt-2"><dt class="text-gray-500">Packaging</dt><dd class="text-right font-semibold">Vacuum-sealed box / drums</dd></div>
+                            </dl>
+                        </div>
+                        <button type="button" data-product="pistachio" class="mt-6 w-full rounded bg-brand-orange px-4 py-3 text-sm font-semibold text-white transition hover:bg-brand-brown">Inquire about green pistachio</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="moq" class="reveal mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-4xl">
+                <h2 class="text-center text-2xl font-extrabold text-brand-brown">Minimum order quantities</h2>
+                <p class="mt-2 text-center text-sm text-gray-600">Order minimums are shown in the same units used in the inquiry form.</p>
+                <div class="mt-6 overflow-x-auto rounded-xl border border-gray-200 bg-white shadow-sm">
+                    <table class="w-full min-w-[520px] border-collapse text-left text-sm">
+                        <caption class="sr-only">Products and their minimum order quantities</caption>
+                        <thead class="bg-brand-brown text-white"><tr><th scope="col" class="px-4 py-3">Product</th><th scope="col" class="px-4 py-3">Minimum order</th><th scope="col" class="px-4 py-3">Unit</th></tr></thead>
+                        <tbody class="divide-y divide-gray-100"><tr><th scope="row" class="px-4 py-3 font-semibold">Premium whole almonds</th><td class="px-4 py-3">120</td><td class="px-4 py-3">kg</td></tr><tr><th scope="row" class="px-4 py-3 font-semibold">Premium saffron stigma</th><td class="px-4 py-3">100</td><td class="px-4 py-3">g</td></tr><tr><th scope="row" class="px-4 py-3 font-semibold">Premium bulk cashews</th><td class="px-4 py-3">10</td><td class="px-4 py-3">kg</td></tr><tr><th scope="row" class="px-4 py-3 font-semibold">Green pistachio</th><td class="px-4 py-3">10</td><td class="px-4 py-3">kg</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="inquiry" class="reveal bg-[#27170F] px-4 py-16 sm:py-20">
+            <div class="mx-auto max-w-4xl">
+                <div class="mb-8 text-center text-white">
+                    <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold">B2B trade inquiry</h2>
+                    <p class="mt-2 text-3xl font-extrabold">Request wholesale pricing</p>
+                    <p class="mt-3 text-sm text-brand-cream/75">Complete the fields below, then choose WhatsApp or email to send your inquiry.</p>
+                </div>
+                <form id="inquiryForm" class="rounded-2xl bg-white p-5 shadow-xl sm:p-8">
+                    <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                        <div>
+                            <label for="productSelect" class="mb-2 block text-sm font-semibold text-gray-700">Product</label>
+                            <select id="productSelect" name="product" required class="w-full rounded border border-gray-300 bg-gray-50 p-3 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/30">
+                                <option value="">Select product</option>
+                                <option value="almonds">Premium whole almonds</option><option value="saffron">Premium saffron stigma</option><option value="cashews">Premium bulk cashews</option><option value="pistachio">Green pistachio</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="volumeInput" class="mb-2 block text-sm font-semibold text-gray-700">Order quantity <span id="unitLabel" class="font-normal text-gray-500">(kg)</span></label>
+                            <input id="volumeInput" name="quantity" type="number" min="120" step="any" required inputmode="decimal" placeholder="Enter quantity" aria-describedby="moqInfo moqWarning" class="w-full rounded border border-gray-300 bg-gray-50 p-3 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/30">
+                            <p id="moqInfo" class="mt-2 text-xs text-gray-500">Minimum order: <span id="moqValue" class="font-semibold text-brand-brown">120 kg</span></p>
+                            <p id="moqWarning" class="mt-1 hidden text-xs font-medium text-red-600" role="status" aria-live="polite"></p>
+                        </div>
+                        <div>
+                            <label for="sectorSelect" class="mb-2 block text-sm font-semibold text-gray-700">Business sector</label>
+                            <select id="sectorSelect" name="sector" required class="w-full rounded border border-gray-300 bg-gray-50 p-3 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/30">
+                                <option value="" disabled selected>Select your industry</option><option>Sweets and confectionery</option><option>Food manufacturing</option><option>Almond oil and extraction</option><option>Cosmetics</option><option>Wholesale / distribution</option><option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="destinationSelect" class="mb-2 block text-sm font-semibold text-gray-700">Delivery destination</label>
+                            <select id="destinationSelect" name="destination" required class="w-full rounded border border-gray-300 bg-gray-50 p-3 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/30">
+                                <option value="" disabled selected>Select destination type</option><option>Domestic (India)</option><option>International</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="companyInput" class="mb-2 block text-sm font-semibold text-gray-700">Company name</label>
+                            <input id="companyInput" name="company" type="text" autocomplete="organization" required class="w-full rounded border border-gray-300 bg-gray-50 p-3 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/30" placeholder="Your company">
+                        </div>
+                        <div>
+                            <label for="emailInput" class="mb-2 block text-sm font-semibold text-gray-700">Business email</label>
+                            <input id="emailInput" name="email" type="email" autocomplete="email" required class="w-full rounded border border-gray-300 bg-gray-50 p-3 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/30" placeholder="you@company.com">
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="notesInput" class="mb-2 block text-sm font-semibold text-gray-700">Additional requirements <span class="font-normal text-gray-500">(optional)</span></label>
+                            <textarea id="notesInput" name="notes" rows="3" class="w-full rounded border border-gray-300 bg-gray-50 p-3 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/30" placeholder="Share any specifications or packaging needs"></textarea>
+                        </div>
+                    </div>
+                    <div class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                        <button id="whatsappButton" type="button" class="rounded bg-green-700 px-5 py-3 text-sm font-bold text-white transition hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2">Continue with WhatsApp</button>
+                        <button id="emailButton" type="button" class="rounded bg-brand-orange px-5 py-3 text-sm font-bold text-white transition hover:bg-brand-brown focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2">Continue with email</button>
+                        <button type="reset" class="rounded border border-gray-300 px-5 py-3 text-sm font-semibold text-gray-700 transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 sm:col-span-2">Reset inquiry form</button>
+                    </div>
+                    <p class="mt-4 text-center text-xs text-gray-500">WhatsApp opens a chat with your inquiry prefilled. Email opens your default mail app with the message ready to send.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <section id="feedback" class="reveal bg-white px-4 py-10 sm:py-12">
+        <div class="mx-auto max-w-2xl">
+            <div class="mb-5 text-center">
+                <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-brand-orange">Your feedback matters</h2>
+                <p class="mt-2 text-2xl font-extrabold text-brand-brown">Help us improve</p>
+                <p class="mt-2 text-sm text-gray-600">Share your experience or suggestions. Your email app will open with your feedback ready to send.</p>
+            </div>
+            <form id="feedbackForm" class="rounded-2xl border border-brand-gold/30 bg-brand-cream/60 p-4 shadow-sm sm:p-6">
+                <div class="space-y-3">
+                    <div>
+                        <div class="grid gap-3 sm:grid-cols-2">
+                            <div>
+                                <label for="feedbackName" class="mb-1.5 block text-sm font-semibold text-gray-700">Name <span class="font-normal text-gray-500">(optional)</span></label>
+                                <input id="feedbackName" name="name" type="text" autocomplete="name" class="w-full rounded border border-gray-300 bg-white p-2.5 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/30" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label for="feedbackEmail" class="mb-1.5 block text-sm font-semibold text-gray-700">Email <span class="font-normal text-gray-500">(optional)</span></label>
+                                <input id="feedbackEmail" name="email" type="email" autocomplete="email" class="w-full rounded border border-gray-300 bg-white p-2.5 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/30" placeholder="you@example.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="feedbackMessage" class="mb-1.5 block text-sm font-semibold text-gray-700">Feedback</label>
+                        <textarea id="feedbackMessage" name="feedback" rows="3" required class="w-full rounded border border-gray-300 bg-white p-2.5 focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/30" placeholder="Tell us what you think or how we can improve"></textarea>
+                    </div>
+                    <div class="grid gap-3 sm:grid-cols-2">
+                        <button type="submit" class="rounded bg-brand-brown px-5 py-2.5 text-sm font-bold text-white transition hover:bg-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2">Prepare feedback email</button>
+                        <button type="reset" class="rounded border border-gray-300 px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2">Reset feedback form</button>
+                    </div>
+                    <p id="feedbackStatus" class="text-center text-sm text-brand-brown" role="status" aria-live="polite"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="border-t border-brand-gold/10 bg-brand-brown px-4 py-10 text-brand-cream/80">
+        <div class="mx-auto flex max-w-7xl flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
+            <div class="flex items-center gap-3">
+                <img src="./Logo.png" alt="Lachitha Vanikam logo" class="h-12 w-12 shrink-0 rounded object-contain" width="48" height="48">
+                <div><p class="font-bold text-white">Lachitha Vanikam</p><p class="mt-1 text-xs">Premium B2B bulk ingredient supply</p></div>
+            </div>
+            <div class="text-sm sm:text-right">
+                <p class="font-semibold text-white">Contact us</p>
+                <p class="mt-2"><a class="hover:text-brand-gold" href="tel:+916381128694">Mobile / WhatsApp: +91 6381128694</a></p>
+                <p class="mt-1"><a class="hover:text-brand-gold" href="mailto:lachithavanikam@gmail.com">Email: lachithavanikam@gmail.com</a></p>
+                <p class="mt-3 text-xs text-brand-cream/60">FSSAI-certified operations · © 2021 Lachitha Vanikam</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const products = {
+                almonds: { label: 'Premium whole almonds', moq: 120, unit: 'kg' },
+                saffron: { label: 'Premium saffron stigma', moq: 100, unit: 'g' },
+                cashews: { label: 'Premium bulk cashews', moq: 10, unit: 'kg' },
+                pistachio: { label: 'Green pistachio', moq: 10, unit: 'kg' }
+            };
+            const form = document.getElementById('inquiryForm');
+            const productSelect = document.getElementById('productSelect');
+            const quantityInput = document.getElementById('volumeInput');
+            const warning = document.getElementById('moqWarning');
+
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+                document.documentElement.classList.add('reveal-ready');
+                const revealObserver = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.12 });
+                document.querySelectorAll('.reveal').forEach(function (section) {
+                    revealObserver.observe(section);
+                });
+            }
+
+            function updateMoq() {
+                const product = products[productSelect.value];
+                if (!product) {
+                    quantityInput.min = String(products.almonds.moq);
+                    document.getElementById('unitLabel').textContent = '(kg)';
+                    document.getElementById('moqValue').textContent = products.almonds.moq + ' kg';
+                    warning.textContent = '';
+                    warning.classList.add('hidden');
+                    return;
+                }
+                quantityInput.min = String(product.moq);
+                document.getElementById('unitLabel').textContent = '(' + product.unit + ')';
+                document.getElementById('moqValue').textContent = product.moq + ' ' + product.unit;
+                const quantity = Number(quantityInput.value);
+                if (quantityInput.value && quantity < product.moq) {
+                    warning.textContent = 'The minimum for ' + product.label + ' is ' + product.moq + ' ' + product.unit + '.';
+                    warning.classList.remove('hidden');
+                } else {
+                    warning.textContent = '';
+                    warning.classList.add('hidden');
+                }
+            }
+
+            form.addEventListener('reset', function () {
+                window.setTimeout(updateMoq, 0);
+            });
+
+            function inquiryMessage() {
+                const data = new FormData(form);
+                const product = products[data.get('product')];
+                return [
+                    'Wholesale inquiry - Lachitha Vanikam',
+                    'Product: ' + product.label,
+                    'Quantity: ' + data.get('quantity') + ' ' + product.unit,
+                    'Minimum order: ' + product.moq + ' ' + product.unit,
+                    'Business sector: ' + data.get('sector'),
+                    'Delivery destination: ' + data.get('destination'),
+                    'Company: ' + data.get('company'),
+                    'Email: ' + data.get('email'),
+                    data.get('notes') ? 'Additional requirements: ' + data.get('notes') : ''
+                ].filter(Boolean).join('\n');
+            }
+
+            productSelect.addEventListener('change', updateMoq);
+            quantityInput.addEventListener('input', updateMoq);
+            document.querySelectorAll('[data-product]').forEach(function (button) {
+                button.addEventListener('click', function () {
+                    productSelect.value = button.dataset.product;
+                    updateMoq();
+                    document.getElementById('inquiry').scrollIntoView({ behavior: 'smooth' });
+                    quantityInput.focus({ preventScroll: true });
+                });
+            });
+
+            document.getElementById('whatsappButton').addEventListener('click', function () {
+                updateMoq();
+                if (!form.reportValidity()) return;
+                const url = 'https://wa.me/916381128694?text=' + encodeURIComponent(inquiryMessage());
+                window.open(url, '_blank', 'noopener,noreferrer');
+            });
+
+            document.getElementById('emailButton').addEventListener('click', function () {
+                updateMoq();
+                if (!form.reportValidity()) return;
+                const subject = encodeURIComponent('Wholesale inquiry - ' + products[productSelect.value].label);
+                const body = encodeURIComponent(inquiryMessage());
+                window.location.href = 'mailto:lachithavanikam@gmail.com?subject=' + subject + '&body=' + body;
+            });
+
+            document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                const feedbackForm = event.currentTarget;
+                if (!feedbackForm.reportValidity()) return;
+                const data = new FormData(feedbackForm);
+                const message = [
+                    data.get('feedback'),
+                    data.get('name') ? 'Name: ' + data.get('name') : '',
+                    data.get('email') ? 'Reply email: ' + data.get('email') : ''
+                ].filter(Boolean).join('\n\n');
+                const subject = encodeURIComponent('Website feedback - Lachitha Vanikam');
+                const body = encodeURIComponent(message);
+                window.location.href = 'mailto:lachithavanikam@gmail.com?subject=' + subject + '&body=' + body;
+                document.getElementById('feedbackStatus').textContent = 'Thanks for your feedback! Your email app should open with a draft. Send the email to submit it.';
+            });
+
+            document.getElementById('feedbackForm').addEventListener('reset', function () {
+                document.getElementById('feedbackStatus').textContent = '';
+            });
+
+            updateMoq();
+        }());
+    </script>
+</body>
+</html>
